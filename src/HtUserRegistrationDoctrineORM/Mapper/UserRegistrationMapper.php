@@ -40,7 +40,7 @@ class UserRegistrationMapper implements UserRegistrationMapperInterface
 
     protected function getRepository()
     {
-        return $this->em->getRepository($this->options->getRequestEntityClass());
+        return $this->em->getRepository($this->options->getRegistrationEntityClass());
     }
 
     /**
