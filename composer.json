@@ -1,0 +1,37 @@
+{
+    "name": "hrevert/ht-user-registration-doctrine-orm",
+    "description": "Doctrine2 ORM storage adapter for HtUserRegistration",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "zf2",
+        "module"
+    ],
+    "homepage": "https://github.com/hrevert/HtUserRegistrationDoctrineORM",
+    "authors": [
+        {
+            "name": "Hrevert Technologies",
+            "email": "info@hrevert.com"
+        },
+        {
+            "name": "ojhaujjwal",
+            "email": "bring2uo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "hrevert/ht-user-registration": "dev-master",
+        "zf-commons/zfc-user-doctrine-orm": "0.1.*"
+    },
+    "suggest": {
+        
+    },
+    "autoload": {
+        "psr-0": {
+            "HtUserRegistration": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
