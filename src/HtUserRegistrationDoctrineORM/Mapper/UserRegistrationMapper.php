@@ -19,7 +19,7 @@ class UserRegistrationMapper implements UserRegistrationMapperInterface
     /**
      * Constructor
      *
-     * @param EntityManager $em
+     * @param EntityManager            $em
      * @param DatabaseOptionsInterface $options
      *
      * @return void
@@ -78,7 +78,7 @@ class UserRegistrationMapper implements UserRegistrationMapperInterface
     }
 
     /**
-     * Saves Entity 
+     * Saves Entity
      *
      * @param UserRegistrationInterface $entity
      *
