@@ -5,6 +5,7 @@
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
     <mapped-superclass name="HtUserRegistration\Entity\UserRegistration" table="user_registration">
+        <id name="user" association-key="true"></id>
         <one-to-one field="user" target-entity="ZfcUser\Entity\User">
             <join-column name="user_id" referenced-column-name="user_id" />
         </one-to-one>
