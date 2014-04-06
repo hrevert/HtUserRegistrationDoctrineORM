@@ -7,7 +7,6 @@ use Doctrine\ORM\EntityManager;
 use HtUserRegistration\Options\DatabaseOptionsInterface;
 use HtUserRegistration\Entity\UserRegistrationInterface;
 use HtUserRegistrationDoctrineORM\Exception;
-use Zend\Stdlib\Hydrator\HydratorInterface;
 
 class UserRegistrationMapper implements UserRegistrationMapperInterface
 {
@@ -63,7 +62,7 @@ class UserRegistrationMapper implements UserRegistrationMapperInterface
     /**
      * {@inheritDoc}
      */
-    public function insert($entity, $tableName = null, HydratorInterface $hydrator = null)
+    public function insert($entity)
     {
         $this->validateEntity($entity, __METHOD__);
         $this->persist($entity);
@@ -71,7 +70,7 @@ class UserRegistrationMapper implements UserRegistrationMapperInterface
     /**
      * {@inheritDoc}
      */
-    public function update($entity, $where = null, $tableName = null, HydratorInterface $hydrator = null)
+    public function update($entity, $where = null)
     {
         $this->validateEntity($entity, __METHOD__);
         $this->persist($entity);
