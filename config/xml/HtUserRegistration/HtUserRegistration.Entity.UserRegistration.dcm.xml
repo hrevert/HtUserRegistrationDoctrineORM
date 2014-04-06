@@ -7,7 +7,7 @@
     <mapped-superclass name="HtUserRegistration\Entity\UserRegistration" table="user_registration">
         <id name="user" association-key="true"></id>
         <one-to-one field="user" target-entity="ZfcUser\Entity\User">
-            <join-column name="user_id" referenced-column-name="user_id" />
+            <join-column name="user_id" referenced-column-name="user_id" on-delete="CASCADE"/>
         </one-to-one>
         <field name="token" length="16" type="string"></field>
         <field name="requestTime" column="request_time" type="datetime"></field>
