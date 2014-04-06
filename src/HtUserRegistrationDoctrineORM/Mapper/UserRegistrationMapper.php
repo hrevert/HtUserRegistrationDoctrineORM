@@ -35,7 +35,7 @@ class UserRegistrationMapper implements UserRegistrationMapperInterface
      */
     public function findByUser(UserInterface $user)
     {
-        return $this->getRepository()->findBy(array('user' => $user));
+        return $this->getRepository()->findOneBy(array('user' => $user));
     }
 
     protected function getRepository()
