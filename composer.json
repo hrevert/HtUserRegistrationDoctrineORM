@@ -21,7 +21,7 @@
     "require": {
         "php": ">=5.4",
         "hrevert/ht-user-registration": "dev-master",
-        "zf-commons/zfc-user-doctrine-orm": "0.1.*"
+        "zf-commons/zfc-user-doctrine-orm": "1.*"
     },
     "suggest": {
         
