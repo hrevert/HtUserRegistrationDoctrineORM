@@ -19,6 +19,13 @@ return array(
                     'HtUserRegistration\Entity' => 'HtUserRegistration\Entity'
                 )
             )
-        )
+        ),
+        'entity_resolver' => array(
+            'orm_default' => array(
+                'resolvers' => array(
+                    'ZfcUser\Entity\UserInterface' => 'ZfcUser\Entity\User',
+                )
+            )
+        ),
     ),
 );
