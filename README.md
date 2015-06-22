@@ -9,7 +9,7 @@ Install
 
 Require with composer
 ```
-composer require apigility-skeletons/ht-user-registration-doctrine-orm
+composer require hrevert/ht-user-registration-doctrine-orm
 ```
 
 Include in config/application.config.php
