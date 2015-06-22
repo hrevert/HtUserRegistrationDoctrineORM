@@ -5,7 +5,9 @@
     "license": "MIT",
     "keywords": [
         "zf2",
-        "module"
+        "module",
+        "zfcuser",
+        "registration"
     ],
     "homepage": "https://github.com/hrevert/HtUserRegistrationDoctrineORM",
     "authors": [
@@ -16,22 +18,23 @@
         {
             "name": "ojhaujjwal",
             "email": "bring2uo@gmail.com"
+        },
+        {
+            "name": "Tom Anderson",
+            "email": "tom.h.anderson@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.4",
-        "hrevert/ht-user-registration": "dev-master",
+        "hrevert/ht-user-registration": "^0.0",
         "zf-commons/zfc-user-doctrine-orm": "1.*"
     },
-    "suggest": {
-        
-    },
     "autoload": {
-        "psr-0": {
-            "HtUserRegistration": "src/"
+        "psr-4": {
+            "HtUserRegistrationDoctrineORM\\": "src/"
         },
         "classmap": [
-            "./Module.php"
+            "Module.php"
         ]
     }
 }
