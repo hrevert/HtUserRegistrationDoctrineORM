@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<skipper version="3.2.2.1235" mvc="Without MVC" orm="Doctrine2">
+  <module name="\HtUserRegistrationDoctrineORM" local-name="HtUserRegistrationDoctrineORM" namespace="\HtUserRegistrationDoctrineORM\Entity" local-namespace="HtUserRegistrationDoctrineORM\Entity" export-format="Doctrine2Xml" export-path="../config/orm" uuid="d6f04d54-e996-4496-adaf-a954afa7b07c">
+    <entity name="\HtUserRegistrationDoctrineORM\Entity\UserRegistration" local-name="UserRegistration" namespace="\HtUserRegistrationDoctrineORM\Entity" uuid="cab121b2-737e-4699-ab29-efc9373b9368">
+      <field name="id" type="integer" required="true" unique="true" primary="true" auto-increment="true" uuid="8b757e4e-b4c5-44cc-999a-56089f71296a"/>
+      <field name="token" type="string" required="true" uuid="6ed7a8a7-512f-4ad0-8e8f-ead9d1a0ca8f"/>
+      <field name="requestedAt" type="datetime" required="true" uuid="f4a2b798-d02b-499e-8a5f-68bca1a30ff6"/>
+      <field name="hasResponded" type="boolean" required="true" uuid="1bf84200-8c7a-4224-9f21-c9885311a90d"/>
+    </entity>
+  </module>
+  <visual-data>
+    <entity uuid="cab121b2-737e-4699-ab29-efc9373b9368" bg-color="#FFFFFF" hdr-color="#D2D2D2" position-x="72" position-y="37" size-x="0" size-x2="125" size-y="0" size-y2="73"/>
+    <module uuid="d6f04d54-e996-4496-adaf-a954afa7b07c" bg-color="#8EDBF1" size-x="11" size-x2="293" size-y="22" size-y2="163"/>
+  </visual-data>
+</skipper>

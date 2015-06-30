@@ -1,0 +1,29 @@
+<?php
+
+$userEntity = 'Db\Entity\User';
+
+return array(
+    'ht_user_registration' => array(
+        'doctrine_object_manager' => 'doctrine.entitymanager.orm_default',
+        'doctrine_driver' => 'doctrine.driver.orm_default',
+        'enable_default_entities' => true,
+        'enable_dynamic_mapping' => true,
+        'dynamic_mapping_config' => array(
+            'user_entity' => array(
+                'entity' => $userEntity,
+                'field' => 'user',
+            ),
+            'user_registration_entity' => array(
+                'entity' => 'HtUserRegistrationDoctrineORM\Entity\UserRegistration',
+                'field' => 'userRegistration',
+                'additional_mapping_data' => array(
+                    'joinColumns' => array(
+                        array(
+                            'onDelete' => 'CASCADE'
+                        ),
+                    ),
+                ),
+            ),
+        ),
+    )
+);

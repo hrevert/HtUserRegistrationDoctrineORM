@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<skipper version="3.2.2.1235" mvc="Without MVC" orm="Doctrine2" name="HtUserRegistrationDoctrineORM" uuid="8a7a1301-b553-443f-a73f-59b5e8e62947">
+  <external-module storage-path="HtUserRegistrationDoctrineORM.module.xml"/>
+  <visual-data>
+    <module uuid="d6f04d54-e996-4496-adaf-a954afa7b07c" position-x="61" position-y="72"/>
+    <project uuid="8a7a1301-b553-443f-a73f-59b5e8e62947" size-x="0" size-x2="611" size-y="0" size-y2="285"/>
+  </visual-data>
+</skipper>

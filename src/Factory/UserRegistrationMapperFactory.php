@@ -1,4 +1,5 @@
 <?php
+
 namespace HtUserRegistrationDoctrineORM\Factory;
 
 use Zend\ServiceManager\ServiceLocatorInterface;
@@ -9,9 +10,13 @@ class UserRegistrationMapperFactory implements FactoryInterface
 {
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        return new UserRegistrationMapper(
-            $serviceLocator->get('HtUserRegistrationDoctrineORM\Doctrine\Em'),
-            $serviceLocator->get('HtUserRegistration\ModuleOptions')
-        );
+        $options = $serviceLocator->get('HtUserRegistration\ModuleOptions');
+        $entityClass = $options->getRegistrationEntityClass();
+
+        $mapper = new UserRegistrationMapper();
+        $mapper->setObjectManager($serviceLocator->get($options->getDoctrineObjectManager()));
+        $mapper->setEntityClass($entityClass);
+
+        return $mapper;
     }
 }
