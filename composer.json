@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "hrevert/ht-user-registration": "dev-master",
+        "hrevert/ht-user-registration": "0.0.*",
         "zf-commons/zfc-user-doctrine-orm": "1.*"
     },
     "suggest": {
